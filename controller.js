@@ -18,14 +18,6 @@ export const getData = async (req, res) => {
 };
 
 export const getDataById = async (req, res) => {
-  // const { id } = req.params;
-  // const q = query(collect, where("documentID", "==", id));
-  // let users = [];
-  // const datas = await getDocs(q);
-  // datas.forEach((doc) => {
-  //   users.push({ documentID: doc.id, ...doc.data() });
-  // });
-  // res.json(users);
   try {
     const { id } = req.params;
     const datas = await getDoc(doc(db, "users", id));
