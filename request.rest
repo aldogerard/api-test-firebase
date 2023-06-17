@@ -1,0 +1,25 @@
+GET http://localhost:3000/users
+
+###
+GET http://localhost:3000/users/bcdc2a2e-5e66-4032-b919-5b16fba7c442
+
+###
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "nama" : "reza",
+  "nim" : "12022002060"
+}
+
+###
+PATCH http://localhost:3000/users/bcdc2a2e-5e66-4032-b919-5b16fba7c442
+Content-Type: application/json
+
+{
+  "nama" : "reza",
+  "nim" : "1202202060"
+}
+
+###
+DELETE http://localhost:3000/users/ad5d820e-3437-469b-bb8a-74b449729da4a
